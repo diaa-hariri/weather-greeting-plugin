@@ -37,3 +37,9 @@ Ajoutez simplement le shortcode suivant à l'endroit où vous souhaitez afficher
 ```php
 [weather_greeting]
 
+
+## Auteur
+
+**Diaa Alhariri**  
+🌐 [hariri.ch](https://hariri.ch)  
+📧 info@hariri.ch
