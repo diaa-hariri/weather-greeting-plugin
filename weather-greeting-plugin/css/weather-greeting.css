@@ -1,0 +1,44 @@
+#weather-greeting {
+    padding: 5px 15px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+#weather-greeting i {
+    cursor: help;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes moveClouds {
+  0%   { transform: translateX(-2px); }
+  50%  { transform: translateX(2px); }
+  100% { transform: translateX(-2px); }
+}
+
+@keyframes sunRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(15deg); }
+}
+
+@keyframes rainDrop {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(2px); opacity: 0.5; }
+}
+
+.wi-cloud, .wi-cloudy, .wi-day-cloudy, .wi-night-alt-cloudy {
+    animation: moveClouds 5s ease-in-out infinite alternate;
+}
+
+.wi-day-sunny, .wi-night-clear {
+    animation: sunRotate 5s ease-in-out infinite alternate;
+    transform-origin: center center;
+}
+
+.wi-showers, .wi-day-rain, .wi-night-alt-rain, .wi-thunderstorm {
+    animation: rainDrop 2s linear infinite;
+}
