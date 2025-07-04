@@ -48,7 +48,7 @@ function get_weather_callback() {
     }
 
     // Your OpenWeatherMap API key (consider making this configurable)
-    $apiKey = 'f3a87dcdb0d6f18890adae5df1c8e25b';
+    $apiKey = 'PUT YOUR API HERE';
 
     // Build the API request URL with query parameters for weather data
     $url = "https://api.openweathermap.org/data/2.5/weather?lat={$lat}&lon={$lon}&appid={$apiKey}&units=metric&lang=fr";
